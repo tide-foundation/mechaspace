@@ -1,0 +1,8 @@
+{
+    "name": "Tide Wallet Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+    "postCreateCommand": "git clone https://github.com/tide-foundation/tide-wallet.git && cd tide-wallet && npm install",
+    "postStartCommand": "cd tide-wallet && npm run dev",
+    "forwardPorts": [3000],
+    "remoteUser": "node"
+  }
