@@ -4,5 +4,19 @@
     "postCreateCommand": "chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh",
     "postStartCommand": "cd tide-wallet && npm run dev",
     "forwardPorts": [3000],
-    "remoteUser": "node"
-  }
+    "remoteUser": "node",
+    "customizations": {
+	// Configure properties specific to Codespaces.
+	"codespaces": {
+		"repositories": {
+			// List additional repositories you'll need access to:
+			"tide-foundation/tide-wallet": {
+				"permissions": {
+					"contents": "read",
+					"packages": "read"
+				}
+			}
+		}
+	}
+}
+}
