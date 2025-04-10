@@ -31,7 +31,7 @@ cd ..
 npm install
 cd ..
 cp -r tide-js ./tidecloak-js/modules/.
-cp -r tidecloak-js ./tide-wallet
+cp -r tidecloak-js ./tide-wallet/node_modules/.
 
 
 echo "🌐 [3/11] Building Codespace URLs..."
