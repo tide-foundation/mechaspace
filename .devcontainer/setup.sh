@@ -25,7 +25,7 @@ cd ..
 echo "📦 [2/11] Installing dependencies..."
 cd tide-wallet/tide-modules
 mkdir -p modules
-cp -r ../../heimdall ./modules
+cp -r ../../heimdall/src/heimdall.js ./modules
 tsc
 cd ../../
 tsc
