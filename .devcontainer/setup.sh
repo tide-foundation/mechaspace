@@ -28,7 +28,6 @@ mkdir -p modules
 cp -r ../../heimdall/src/heimdall.js ./modules
 tsc
 cd ../../
-tsc
 npm install
 cd ..
 cp -r tide-js ./tidecloak-js/modules/.
