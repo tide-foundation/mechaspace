@@ -27,7 +27,7 @@ cd tide-wallet/tide-modules
 mkdir -p modules
 cp -r ../../heimdall/src/heimdall.js ./modules
 tsc
-cd ../../
+cd ..
 npm install
 cd ..
 cp -r tide-js ./tidecloak-js/modules/.
