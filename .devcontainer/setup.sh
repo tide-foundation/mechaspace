@@ -40,4 +40,4 @@ TIDECLOAK_LOCAL_URL="https://staging.dauth.me"
 
 # ✍️ [4/11] Writing TIDECLOAK_LOCAL_URL to tide-wallet/.env.local
 echo "TIDECLOAK_LOCAL_URL=$TIDECLOAK_LOCAL_URL" > tide-wallet/.env.local
-echo "CODESPACE_URL=$CODESPACE_URL" > tide-wallet/.env.local
+echo "CODESPACE_URL=$CODESPACE_URL" >> tide-wallet/.env.local
