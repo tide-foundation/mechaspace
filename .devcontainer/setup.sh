@@ -24,17 +24,17 @@ git clone https://github.com/tide-foundation/tide-wallet.git
 # TEMPORARY UNTIL WE HAVE STUFF TO PROD!!
 git clone https://github.com/tide-foundation/tide-js.git
 cd tide-js
-git checkout -b staging origin/staging
+git checkout origin/staging
 cd ..
 
 git clone https://github.com/tide-foundation/tidecloak-js.git
 cd tidecloak-js
-git checkout -b staging origin/staging
+git checkout origin/staging
 cd ..
 
 git clone https://github.com/tide-foundation/heimdall.git
 cd heimdall
-git checkout -b staging origin/staging
+git checkout origin/staging
 cd ..
 
 echo "📦 [2/11] Installing dependencies..."
