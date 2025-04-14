@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-CODESPACE_URL="https://${CODESPACE_NAME}-3000.app.github.dev"
-TIDECLOAK_LOCAL_URL="https://staging.dauth.me"
+CODESPACE_URL=${CODESPACE_NAME:+https://${CODESPACE_NAME}-3000.app.github.dev}
+CODESPACE_URL=${CODESPACE_URL:-http://localhost:3000}TIDECLOAK_LOCAL_URL="https://staging.dauth.me"
 TIDE_THRESHOLD_T=3
 TIDE_THRESHOLD_N=5
 
