@@ -13,13 +13,13 @@ sudo apt-get install -y libssl-dev
 echo "🚀 [1/11] Cloning the MECHAPURSE..."
 
 # Clean up old clones if they exist
-[ -d tide-wallet ] && rm -rf tide-wallet
+[ -d mechapurse ] && rm -rf mechapurse
 [ -d tide-js ] && rm -rf tide-js
 [ -d tidecloak-js ] && rm -rf tidecloak-js
 [ -d heimdall ] && rm -rf heimdall
 
 # Clone the repositories
-git clone https://github.com/tide-foundation/tide-wallet.git
+git clone https://github.com/tide-foundation/mechapurse.git
 
 # TEMPORARY UNTIL WE HAVE STUFF TO PROD!!
 git clone https://github.com/tide-foundation/tide-js.git
@@ -38,7 +38,7 @@ git checkout origin/staging
 cd ..
 
 echo "📦 [2/11] Installing dependencies..."
-cd tide-wallet/tide-modules
+cd mechapurse/tide-modules
 mkdir -p modules
 cp -r ../../heimdall/src/heimdall.js ./modules
 tsc
@@ -50,10 +50,10 @@ cd ..
 sed -i "s/\(export const Threshold = \)[0-9]\+;/\1${TIDE_THRESHOLD_T};/" ./tide-js/Tools/Utils.js
 sed -i "s/\(export const Max = \)[0-9]\+;/\1${TIDE_THRESHOLD_N};/" ./tide-js/Tools/Utils.js
 
-# Copy modules to tidecloak-js and tide-wallet
+# Copy modules to tidecloak-js and mechapurse
 cp -r tide-js ./tidecloak-js/modules/.
-cp -r tidecloak-js ./tide-wallet/node_modules/.
+cp -r tidecloak-js ./mechapurse/node_modules/.
 
-# ✍️ [3/3] Writing environment variables to tide-wallet/.env.local
-echo "TIDECLOAK_LOCAL_URL=$TIDECLOAK_LOCAL_URL" > tide-wallet/.env.local
-echo "CODESPACE_URL=$CODESPACE_URL" >> tide-wallet/.env.local
+# ✍️ [3/3] Writing environment variables to mechapurse/.env.local
+echo "TIDECLOAK_LOCAL_URL=$TIDECLOAK_LOCAL_URL" > mechapurse/.env.local
+echo "CODESPACE_URL=$CODESPACE_URL" >> mechapurse/.env.local
