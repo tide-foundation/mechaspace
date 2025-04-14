@@ -7,6 +7,7 @@ if [[ -n "$CODESPACE_NAME" ]]; then
 else
   CODESPACE_URL="http://localhost:3000"
 fi
+TIDECLOAK_LOCAL_URL="https://staging.dauth.me"
 TIDE_THRESHOLD_T=3
 TIDE_THRESHOLD_N=5
 
