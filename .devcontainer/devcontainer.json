@@ -8,7 +8,7 @@
   "customizations": {
     "codespaces": {
       "repositories": {
-        "tide-foundation/tide-wallet": {
+        "tide-foundation/mechapurse": {
           "permissions": {
             "contents": "read",
             "packages": "read"
