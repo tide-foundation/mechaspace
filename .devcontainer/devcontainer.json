@@ -2,7 +2,7 @@
   "name": "Tide Wallet Codespace",
   "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-20",
   "postCreateCommand": "npm install -g typescript && chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh",
-  "postStartCommand": "cd tide-wallet && npm run dev",
+  "postStartCommand": "cd mechapurse && npm run dev",
   "forwardPorts": [3000],
   "remoteUser": "node",
   "customizations": {
