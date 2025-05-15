@@ -25,7 +25,22 @@
           }
         }
       }
+    },
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker"
+      ]
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {
+        "version": "latest"
+      }
     }
-  },
-  
+  }
 }
