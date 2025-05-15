@@ -3,7 +3,17 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-20",
   "postCreateCommand": "npm install -g typescript && chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh",
   "postStartCommand": "cd mechapurse && npm run dev",
-  "forwardPorts": [3000],
+  "forwardPorts": [3000, 8080],
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js App",
+      "onAutoForward": "openBrowser"
+    },
+    "8080": {
+      "label": "Tidecloak Dev Container",
+      "onAutoForward": "openBrowser"
+    }
+  },
   "remoteUser": "node",
   "customizations": {
     "codespaces": {
@@ -16,5 +26,6 @@
         }
       }
     }
-  }
+  },
+  
 }
