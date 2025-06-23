@@ -16,7 +16,7 @@ docker run -d \
   -e KC_HOSTNAME="${CODESPACE_URL_TC}" \
   -e KC_BOOTSTRAP_ADMIN_USERNAME="admin" \
   -e KC_BOOTSTRAP_ADMIN_PASSWORD="password" \
-  tideorg/tidecloak-dev:latest
+  tideorg/tidecloak-dev:0.9.4
 
 echo ""
 echo "✅ Tidecloak Setup complete."
